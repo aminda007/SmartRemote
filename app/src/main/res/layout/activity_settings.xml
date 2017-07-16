@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codemo.www.mc.SettingsActivity">
+
+    <!-- Login progress -->
+
+    <TextView
+        android:text="Enter ip adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ipAddress" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:onClick="onClick" />
+
+    <TextView
+        android:text="Current IP adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+
+
+
+    <TextView
+        android:text="."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentIP" />
+
+    <TextView
+        android:text="Choose AC Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp" />
+
+    <Button
+
+        android:text="Set Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeButton"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:onClick="onTypeClick" />
+
+    <Button
+        android:text=""
+        android:layout_width="55dp"
+        android:id="@+id/homeBtn"
+        android:background="@drawable/ic_home"
+        android:layout_below="@id/submitBtn"
+        android:layout_gravity="bottom|center_horizontal"
+        android:onClick="onHomeClick"
+        android:layout_marginTop="30dp"
+        android:layout_height="55dp"
+        tools:ignore="ObsoleteLayoutParam" />
+
+</LinearLayout>

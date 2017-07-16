@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Smart Remote</string>
+    <string name="title_activity_settings">Settings</string>
+    <string-array name="names">
+        <item>LG</item>
+        <item>SAMSUNG</item>
+        <item>NEC</item>
+    </string-array>
+
+</resources>
