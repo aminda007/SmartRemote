@@ -34,14 +34,12 @@ public class MainActivity extends AppCompatActivity {
         Button onFanBtn = (Button)findViewById(R.id.onFanBtn);
         Button offFanBtn = (Button)findViewById(R.id.offFanBtn);
         Button onACBtn = (Button)findViewById(R.id.onACBtn);
-//        Button offACBtn = (Button)findViewById(R.id.offACBtn);
         Button addTempBtn = (Button)findViewById(R.id.plusACBtn);
         Button minusTempBtn = (Button)findViewById(R.id.minusACBtn);
         onLightBtn.setOnClickListener(
                 new Button.OnClickListener(){
                     @Override
                     public void onClick(View v) {
-
                         buttonClicked("a");
                     }
                 }
@@ -78,14 +76,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-//        offACBtn.setOnClickListener(
-//                new Button.OnClickListener(){
-//                    @Override
-//                    public void onClick(View v) {
-//                        buttonClicked("f");
-//                    }
-//                }
-//        );
         addTempBtn.setOnClickListener(
                 new Button.OnClickListener(){
                     @Override
@@ -137,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
                         HttpURLConnection urlConnection = null;
                         try {
                             url = new URL("http://"+ip+"/"+opp);
-//                            url = new URL("http://www.google.com");
 
                             urlConnection = (HttpURLConnection) url.openConnection();
 
@@ -170,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
         messageHandler.post(thread);
         thread.start();
 
-//        network.execute("String1","String2");
     }
     public void onSettingClick(View view){
         Intent i = new Intent(this,SettingsActivity.class);

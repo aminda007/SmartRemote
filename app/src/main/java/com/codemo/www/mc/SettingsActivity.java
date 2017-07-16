@@ -2,12 +2,9 @@ package com.codemo.www.mc;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -69,30 +66,6 @@ public class SettingsActivity extends AppCompatActivity {
         else if(id==3){
             MainActivity.activity.buttonClicked("4");
         }
-//        else if(id==4){
-//            MainActivity.activity.buttonClicked("t");
-//        }
-//        else if(id==5){
-//            MainActivity.activity.buttonClicked("u");
-//        }
-//        else if(id==6){
-//            MainActivity.activity.buttonClicked("v");
-//        }
-//        else if(id==7){
-//            MainActivity.activity.buttonClicked("w");
-//        }
-//        else if(id==8){
-//            MainActivity.activity.buttonClicked("x");
-//        }
-//        else if(id==9){
-//            MainActivity.activity.buttonClicked("y");
-//        }
-//        else if(id==10){
-//            MainActivity.activity.buttonClicked("z");
-//        }
-//        else{
-//            MainActivity.activity.buttonClicked("m");
-//        }
     }
 
 }
